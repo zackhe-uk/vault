@@ -6,7 +6,7 @@ find . -type d -print -exec sh -c 'tree "$0" \
     -H "." \
     -L 1 \
     --noreport \
-    --houtro ""
+    --houtro "" \
     --dirsfirst \
     --charset utf-8 \
     -I "index.html" \
