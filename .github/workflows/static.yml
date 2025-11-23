@@ -34,7 +34,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Directory listings
-        run: genlistings.sh
+        run: |
+          chmod +x ./genlistings.sh
+          ./genlistings.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
